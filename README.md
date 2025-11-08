@@ -18,3 +18,24 @@ This is a full-stack e-commerce application built using:
 ✅ Responsive Bootstrap UI (TechZone Theme)
 
 # 📂 Folder Structure
+
+codealpha_Internships/
+│
+├── Task1_Ecommerce_Store/
+│   ├── backend/
+│   │   ├── server.js
+│   │   ├── routes/
+│   │   ├── models/
+│   │   ├── config/
+│   │   └── package.json
+│   │
+│   ├── frontend/
+│   │   ├── index.html
+│   │   ├── cart.html
+│   │   ├── login.html
+│   │   ├── register.html
+│   │   ├── orders.html
+│   │   ├── js/
+│   │   ├── styles.css
+│   │   
+
