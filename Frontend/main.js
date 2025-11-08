@@ -1,7 +1,7 @@
 console.log("JS Loaded!");
 
 
-const API = "http://localhost:5000/api"; // backend URL
+const API = "http://localhost:5000/api"; 
 
 async function loadProducts() {
   try {
@@ -54,9 +54,7 @@ function addToCart(id, name, price) {
 }
 
 
-// ================== CART FUNCTIONS ==================
 
-// Load cart items and show them on the cart page
 function loadCart() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   const cartContainer = document.getElementById("cartItems");
@@ -91,7 +89,7 @@ function removeItem(index) {
   loadCart();
 }
 
-// Clear all items
+
 function clearCart() {
   localStorage.removeItem("cart");
   loadCart();
@@ -99,7 +97,7 @@ function clearCart() {
 }
 
 
-// ================== PLACE ORDER ==================
+
 async function placeOrder() {
   const token = localStorage.getItem("token");
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -136,3 +134,4 @@ async function placeOrder() {
     alert("Something went wrong while placing the order.");
   }
 }
+
